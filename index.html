@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Quizzy · quiz rounds for BCA revision and class quizzes</title>
+  <meta name="description" content="Timed quiz rounds for C, Java, Python, DBMS, OS and Networks, plus class quizzes you can make and share with a 6-digit PIN.">
+  <meta name="theme-color" content="#172029">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=JetBrains+Mono:wght@500;700&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/screens.css">
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar__in">
+      <a href="#/" class="logo" aria-label="Quizzy home"><span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Quizzy</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/" data-nav="home">Play</a>
+        <a href="#/board" data-nav="board">Leaderboard</a>
+        <a href="#/studio" data-nav="studio">Quiz Studio</a>
+        <a href="#/stats" data-nav="stats">My stats</a>
+      </nav>
+      <div class="topbar__right">
+        <a href="#/join" class="btn btn--sun btn--sm" data-nav="join">Enter PIN</a>
+        <a href="#/login" class="who" id="who" hidden></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__in">
+      <p>Built by <a href="https://kumkummitbavkar.vercel.app" target="_blank" rel="noopener">Kumkum Mitbavkar</a></p>
+      <p><a href="#/about">About &amp; credits</a></p>
+    </div>
+  </footer>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Play</a>
+    <a href="#/board" data-nav="board"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10h4v10zm6 0V4h4v16zm6 0v-7h4v7z"/></svg>Boards</a>
+    <a href="#/studio" data-nav="studio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17.2V20h2.8l8.3-8.3-2.8-2.8zM19.7 7.1a1 1 0 0 0 0-1.4l-1.4-1.4a1 1 0 0 0-1.4 0l-1.6 1.6 2.8 2.8z"/></svg>Studio</a>
+    <a href="#/stats" data-nav="stats"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9h-9z"/><path d="M14 2v8h8a8 8 0 0 0-8-8z" opacity=".55"/></svg>Stats</a>
+  </nav>
+
+  <noscript><p class="noscript">Quizzy needs JavaScript to run the quiz timer and scoring.</p></noscript>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
